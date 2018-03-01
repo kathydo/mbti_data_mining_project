@@ -1,52 +1,16 @@
 '''
-Name:Kathy Do
-StudentID: V00819340
+Name: Kathy Do
 Name of Program: data_scrub.py
-Purpose: Vectorizes the input data using CountVectorizer, 
+Purpose: Vectorizes the input data using CountVectorizer.
 Date: February 26, 2018
 '''
-
 import csv
 import pandas as pd
 import re
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.model_selection import train_test_split
 import numpy as np
-'''
-# list of text documents
-text = ["The quick brown fox jumped over the lazy dog."]
-# create the transform
-vectorizer = CountVectorizer()
-# tokenize and build vocab
-vectorizer.fit(text)
-# summarize
-print(vectorizer.vocabulary_)
-# encode document
-vector = vectorizer.transform(text)
-# summarize encoded vector
-print(vector.shape)
-print(type(vector))
-print(vector.toarray())
 
-mbti_raw_data = pd.read_csv("/Users/kathydo/Documents/School/SENG_474/Project/mbti_1.csv")
-#print(mbti_raw_data)
-#print(type(mbti_raw_data))
-
-
-print type(mbti_raw_data.iloc[0]['posts'])
-
-text_post = mbti_raw_data.iloc[0]['posts']
-#text_urls_removed = re.sub(r'^https?:\/\/.*[\r\n]*', '', text_post)
-text_urls_removed = re.sub(r'http\S+', '', text_post)
-#print text_urls_removed
-
-# create the transform
-vectorizer = CountVectorizer()
-# tokenize and build vocab
-vectorizer.fit(text_urls_removed)
-# summarize
-print(vectorizer.vocabulary_)
-'''
 mbti_df = pd.read_csv("/Users/kathydo/Documents/School/SENG_474/Project/out.csv")
 
 #print mbti_df.shape
