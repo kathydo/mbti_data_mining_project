@@ -21,11 +21,6 @@ mbti_df['NS'] = np.where(mbti_df['type'].str[1] == 'N', 1, 0)
 mbti_df['TF'] = np.where(mbti_df['type'].str[2] == 'T', 1, 0)
 mbti_df['JP'] = np.where(mbti_df['type'].str[3] == 'J', 1, 0)
 
-'''
-using out.csv, vocab is size 80122
-using mbti.csv, vocab is size 112954
-
-'''
 
 #print mbti_df.shape
 #create 4 new columns in the mbti_df to contain binary values target values for the 4 different personality axes
