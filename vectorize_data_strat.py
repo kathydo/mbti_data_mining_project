@@ -97,21 +97,21 @@ print len(vectorizer.get_feature_names())
 #print(vectorizer.vocabulary_)
 
 #vectorizing - encode each data set as a vector
-X_train_vectorized = vectorizer.transform(X_train_IE)
-X_test_vectorized = vectorizer.transform(X_test_IE)
-X_val_vectorized = vectorizer.transform(X_val_IE)
+X_train_vectorized_IE = vectorizer.transform(X_train_IE)
+X_test_vectorized_IE = vectorizer.transform(X_test_IE)
+X_val_vectorized_IE = vectorizer.transform(X_val_IE)
 
-X_train_vectorized = vectorizer.transform(X_train_NS)
-X_test_vectorized = vectorizer.transform(X_test_NS)
-X_val_vectorized = vectorizer.transform(X_val_NS)
+X_train_vectorized_NS = vectorizer.transform(X_train_NS)
+X_test_vectorized_NS = vectorizer.transform(X_test_NS)
+X_val_vectorized_NS = vectorizer.transform(X_val_NS)
 
-X_train_vectorized = vectorizer.transform(X_train_TF)
-X_test_vectorized = vectorizer.transform(X_test_TF)
-X_val_vectorized = vectorizer.transform(X_val_TF)
+X_train_vectorized_TF = vectorizer.transform(X_train_TF)
+X_test_vectorized_TF = vectorizer.transform(X_test_TF)
+X_val_vectorized_TF = vectorizer.transform(X_val_TF)
 
-X_train_vectorized = vectorizer.transform(X_train_JP)
-X_test_vectorized = vectorizer.transform(X_test_JP)
-X_val_vectorized = vectorizer.transform(X_val_JP)
+X_train_vectorized_JP = vectorizer.transform(X_train_JP)
+X_test_vectorized_JP = vectorizer.transform(X_test_JP)
+X_val_vectorized_JP = vectorizer.transform(X_val_JP)
 #the y vectors containing the target data is already in vectors with binary values for classification
 
 '''
