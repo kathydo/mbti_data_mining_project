@@ -13,7 +13,6 @@ from keras.models import Model
 from sklearn.model_selection import train_test_split
 
 ## data preprocessing
-##### Compute list of subject with Type | list of comments
 from nltk.stem import PorterStemmer, WordNetLemmatizer
 from nltk.corpus import stopwords
 # Lemmatize
