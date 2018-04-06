@@ -10,7 +10,7 @@ y_train_TF = genfromtxt('y_train_TF.csv', delimiter=',')
 y_test_TF = genfromtxt('y_test_TF.csv', delimiter=',')
 y_val_TF = genfromtxt('y_val_TF.csv', delimiter=',')
 y_train_JP = genfromtxt('y_train_JP.csv', delimiter=',')
-y_test_JP = genfromtxt('y_train_JP.csv', delimiter=',')
+y_test_JP = genfromtxt('y_test_JP.csv', delimiter=',')
 y_val_JP = genfromtxt('y_val_JP.csv', delimiter=',')
 
 #now you can work with the y vectors from here
